@@ -2,10 +2,16 @@
 compose-plugin = "1.6.11"
 kotlin = "2.0.0"
 kmidi = "0.0.6"
+voyager = "1.1.0-beta02"
 
 [libraries]
 kmidi = { group = "org.wysko", name = "kmidi", version.ref = "kmidi" }
+voyager-navigator = { group = "cafe.adriel.voyager", name = "voyager-navigator", version.ref = "voyager" }
+voyager-screenmodel = { group = "cafe.adriel.voyager", name = "voyager-screenmodel", version.ref = "voyager" }
+mpfilepicker = { group = "com.darkrockstudios", name = "mpfilepicker", version = "2.0.2!!" }
 
+[bundles]
+voyager = ["voyager-navigator", "voyager-screenmodel"]
 
 [plugins]
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
